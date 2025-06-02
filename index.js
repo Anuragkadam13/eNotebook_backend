@@ -15,13 +15,6 @@ app.use(
 );
 
 //Available routes
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.get("/about", (req, res) => {
-  res.send("About route 🎉 ");
-});
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
 
