@@ -8,9 +8,9 @@ const connectToMongo = () => {
 
   return mongoose
     .connect(process.env.MONGO_URI, {
-      useNewUrlParser: true, // Add these options
+      useNewUrlParser: true,
       useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 15000, // Increase timeout to 15 seconds
+      serverSelectionTimeoutMS: 15000,
       connectTimeoutMS: 15000,
     })
     .then(() => {
