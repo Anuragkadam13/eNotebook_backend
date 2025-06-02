@@ -8,7 +8,7 @@ const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5000"],
+    origin: ["https://e-notebook-frontend-one.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true,
   })
