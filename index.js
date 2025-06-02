@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: ["https://e-notebook-frontend-one.vercel.app"],
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
